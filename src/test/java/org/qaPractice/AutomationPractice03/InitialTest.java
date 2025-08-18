@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+//TODO: create suite to be triggered from cmd command
+
 public class InitialTest {
 	//popups make test unstable. Gotta find way to deal with those
 	List<WebElement> list;
@@ -59,7 +61,7 @@ public class InitialTest {
 
 		// download invoice
 		//! download not finished :))
-		driver.findElement(By.xpath("//a[contains(@href, '/download_invoice/')]")).click();
+//		driver.findElement(By.xpath("//a[contains(@href, '/download_invoice/')]")).click();
 		try {
 			Thread.sleep(8);
 		} catch (InterruptedException e) {
