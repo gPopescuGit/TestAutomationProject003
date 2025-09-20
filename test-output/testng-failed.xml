@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.qaPractice.AutomationPractice03.InitialTest">
+      <class name="manageUserAccount.Test_UserDelete">
         <methods>
-          <include name="initialTest"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="testRegistrationSuccess" invocation-numbers="0"/>
         </methods>
-      </class> <!-- org.qaPractice.AutomationPractice03.InitialTest -->
+      </class> <!-- manageUserAccount.Test_UserDelete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

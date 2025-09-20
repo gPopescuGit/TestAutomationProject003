@@ -31,7 +31,7 @@ public class InitialTest {
 		driver.findElement(By.cssSelector("input[type='email']")).sendKeys("user@mail");
 		driver.findElement(By.cssSelector("input[type='password']")).sendKeys("userpass");
 		driver.findElement(By.cssSelector("button[type='submit'][data-qa='login-button']")).click();
-		//avoid home bottom popup
+		//temporary&unstable patch to avoid home bottom popup
 		try {
 			Thread.sleep(6);
 			driver.findElement(By.cssSelector("a[href='/']")).click();

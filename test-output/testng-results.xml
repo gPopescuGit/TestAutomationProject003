@@ -1,17 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-18T15:28:33 EEST" name="MyTestSuite" finished-at="2025-08-18T15:28:50 EEST" duration-ms="17231">
+  <suite started-at="2025-09-20T18:56:05 EEST" name="MyTestSuite" finished-at="2025-09-20T18:57:00 EEST" duration-ms="54196">
     <groups>
+      <group name="ManageUserAccount">
+        <method signature="Test_UserRegistration.testRegistrationSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserRegistration@6b927fb]" name="testRegistrationSuccess" class="manageUserAccount.Test_UserRegistration"/>
+        <method signature="Test_UserLogin.testUserLoginSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserLogin@6f1de4c7]" name="testUserLoginSuccess" class="manageUserAccount.Test_UserLogin"/>
+        <method signature="Test_UserLogout.testRegistrationSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserLogout@459e9125]" name="testRegistrationSuccess" class="manageUserAccount.Test_UserLogout"/>
+        <method signature="Test_UserDelete.testUserDeleteSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserDelete@7b2bbc3]" name="testUserDeleteSuccess" class="manageUserAccount.Test_UserDelete"/>
+      </group> <!-- ManageUserAccount -->
     </groups>
-    <test started-at="2025-08-18T15:28:33 EEST" name="InitialTest" finished-at="2025-08-18T15:28:50 EEST" duration-ms="17231">
-      <class name="org.qaPractice.AutomationPractice03.InitialTest">
-        <test-method signature="initialTest()[pri:0, instance:org.qaPractice.AutomationPractice03.InitialTest@481a996b]" started-at="2025-08-18T15:28:33 EEST" name="initialTest" finished-at="2025-08-18T15:28:50 EEST" duration-ms="17186" status="PASS">
+    <test started-at="2025-09-20T18:56:05 EEST" name="SetupTest" finished-at="2025-09-20T18:56:21 EEST" duration-ms="15179">
+      <class name="manageUserAccount.Test_UserRegistration">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:manageUserAccount.Test_UserRegistration@6b927fb]" started-at="2025-09-20T18:56:06 EEST" name="launchApplication" finished-at="2025-09-20T18:56:09 EEST" duration-ms="3758" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialTest -->
-      </class> <!-- org.qaPractice.AutomationPractice03.InitialTest -->
-    </test> <!-- InitialTest -->
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testRegistrationSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserRegistration@6b927fb]" started-at="2025-09-20T18:56:09 EEST" name="testRegistrationSuccess" data-provider="getData" finished-at="2025-09-20T18:56:20 EEST" duration-ms="10644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=justanothername, pass=justanotheruserpass, email=justanotheruser@yahoo.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistrationSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:manageUserAccount.Test_UserRegistration@6b927fb]" started-at="2025-09-20T18:56:20 EEST" name="tearDown" finished-at="2025-09-20T18:56:21 EEST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- manageUserAccount.Test_UserRegistration -->
+    </test> <!-- SetupTest -->
+    <test started-at="2025-09-20T18:56:21 EEST" name="DependendTests" finished-at="2025-09-20T18:56:46 EEST" duration-ms="25463">
+      <class name="manageUserAccount.Test_UserLogin">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:manageUserAccount.Test_UserLogin@6f1de4c7]" started-at="2025-09-20T18:56:21 EEST" name="launchApplication" finished-at="2025-09-20T18:56:24 EEST" duration-ms="2985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testUserLoginSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserLogin@6f1de4c7]" started-at="2025-09-20T18:56:24 EEST" name="testUserLoginSuccess" data-provider="getData" finished-at="2025-09-20T18:56:32 EEST" duration-ms="8263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=justanothername, pass=justanotheruserpass, email=justanotheruser@yahoo.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserLoginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:manageUserAccount.Test_UserLogin@6f1de4c7]" started-at="2025-09-20T18:56:32 EEST" name="tearDown" finished-at="2025-09-20T18:56:32 EEST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- manageUserAccount.Test_UserLogin -->
+      <class name="manageUserAccount.Test_UserLogout">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:manageUserAccount.Test_UserLogout@459e9125]" started-at="2025-09-20T18:56:32 EEST" name="launchApplication" finished-at="2025-09-20T18:56:36 EEST" duration-ms="3189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testRegistrationSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserLogout@459e9125]" started-at="2025-09-20T18:56:36 EEST" name="testRegistrationSuccess" data-provider="getData" finished-at="2025-09-20T18:56:45 EEST" duration-ms="9824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=justanothername, pass=justanotheruserpass, email=justanotheruser@yahoo.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistrationSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:manageUserAccount.Test_UserLogout@459e9125]" started-at="2025-09-20T18:56:45 EEST" name="tearDown" finished-at="2025-09-20T18:56:46 EEST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- manageUserAccount.Test_UserLogout -->
+    </test> <!-- DependendTests -->
+    <test started-at="2025-09-20T18:56:46 EEST" name="CleanupTest" finished-at="2025-09-20T18:57:00 EEST" duration-ms="13537">
+      <class name="manageUserAccount.Test_UserDelete">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:manageUserAccount.Test_UserDelete@7b2bbc3]" started-at="2025-09-20T18:56:46 EEST" name="launchApplication" finished-at="2025-09-20T18:56:48 EEST" duration-ms="2218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testUserDeleteSuccess(java.util.HashMap)[pri:0, instance:manageUserAccount.Test_UserDelete@7b2bbc3]" started-at="2025-09-20T18:56:48 EEST" name="testUserDeleteSuccess" data-provider="getData" finished-at="2025-09-20T18:56:59 EEST" duration-ms="10736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=justanothername, pass=justanotheruserpass, email=justanotheruser@yahoo.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserDeleteSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:manageUserAccount.Test_UserDelete@7b2bbc3]" started-at="2025-09-20T18:56:59 EEST" name="tearDown" finished-at="2025-09-20T18:57:00 EEST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- manageUserAccount.Test_UserDelete -->
+    </test> <!-- CleanupTest -->
   </suite> <!-- MyTestSuite -->
 </testng-results>
